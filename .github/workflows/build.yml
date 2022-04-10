@@ -25,4 +25,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: rbw/prometheus-smartctl:latest
+          file: ./Dockerfile
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/prometheus-smartctl:latest
