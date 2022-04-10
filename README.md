@@ -1,6 +1,6 @@
 # Prometheus S.M.A.R.T ctl metrics exporter
 
-![build](https://github.com/matusnovak/prometheus-smartctl/workflows/build/badge.svg)
+[![ci](https://github.com/RBozydar/prometheus-smartctl/actions/workflows/build.yml/badge.svg)](https://github.com/RBozydar/prometheus-smartctl/actions/workflows/build.yml)
 
 This is a simple exporter for the [Prometheus metrics](https://prometheus.io/) using [smartctl](https://www.smartmontools.org/). The script `smartprom.py` also comes with `smartprom.service` so that you can run this script in the background on your Linux OS via `systemctl`. The script will use port `9902`, you can change it by changing it directly in the script. This script exports all of the data available from the smartctl.
 
