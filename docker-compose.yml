@@ -1,8 +1,19 @@
 version: '3'
+
+networks:
+  proxy:
+    external: true
+
+
 services:
-  smartctl-metrics:
+  smartctl:
     build: ./
+    container_name: smartctl
     restart: unless-stopped
     privileged: true
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - proxy
     ports:
       - 9902:9902
