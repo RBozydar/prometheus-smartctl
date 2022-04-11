@@ -167,7 +167,7 @@ def main():
     start_time = time.time()
     while True:
         elapsed_time = time.time() - start_time
-        if elapsed_time > 20.0:
+        if elapsed_time > 7200.0:
             start_time = time.time()
             collect()
         time.sleep(0.1)
